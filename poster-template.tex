@@ -1,0 +1,133 @@
+\documentclass[final]{beamer}
+
+%\usepackage[scale=1.4]{beamerposter}
+%\usepackage[size=custom,width=193,height=91,scale=1.4]{beamerposter}
+\usepackage[size=a0, orientation=portrait, scale=1.4]{beamerposter}
+
+\usetheme{confposter}
+
+%-----------------------------------------------------------
+% Define the column widths and overall poster size
+% To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
+% In this template, the separation width chosen is 0.024 of the paper width and a 4-column layout
+% onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
+% Set twocolwid to be (2*onecolwid)+sepwid = 0.464
+% Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\paperwidth}{841mm} %{48in} % A0 width: 46.8in or 1189mm
+\setlength{\paperheight}{1189mm} %{36in} % A0 height: 33.1in or 841mm
+\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.22\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
+\setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
+\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+
+%-----------------------------------------------------------
+
+\usepackage[T1]{fontenc} \usepackage{lmodern} \usepackage[utf8]{inputenc}
+\usepackage{graphicx} \graphicspath{{figures/}}
+\usepackage{booktabs, threeparttable, tabularx}
+\usepackage{tikz, smartdiagram}
+\usesmartdiagramlibrary{additions}
+
+\newcommand{\tspacea}{\hspace{0.7em}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\title{Wikipedia Graph Mining: \\ Dynamic Structure of Collective Memory}
+\author{Volodymyr Miz, Kirell Benzi, Benjamin Ricaud, Pierre Vandergheynst}
+\institute{Swiss Federal Institute of Technology (EPFL)}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+\addtobeamertemplate{block alerted end}{}{\vspace*{2ex}} % White space under highlighted (alert) blocks
+
+\setlength{\belowcaptionskip}{2ex} % White space under figures
+\setlength\belowdisplayshortskip{2ex} % White space under equations
+
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+\begin{columns}[t] % The [t] option aligns each column's content to the top
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+\begin{column}{\twocolwid} % The first content column
+
+%-------------------------------------------------------------------------------
+
+\begin{alertblock}{Summary} % Objective, Summary
+
+	\begin{itemize}
+		\item Item 1.
+		\item Something else.
+		\item And this.
+		%We need both open benchmarking for fast and cost-efficient (evaluation cost is distributed among researchers) iterations, and standardized challenges to foster competition and boost performance.
+		\item And, finally, that.
+	\end{itemize}
+\end{alertblock}
+
+\begin{alertblock}{Dataset}
+	\begin{itemize}
+		\item Many nodes.
+		\item Many edges.
+		\item Many hours.
+		\item Many days/months.
+	\end{itemize}
+\end{alertblock}
+
+\begin{block}{Graph learning}
+\vspace{0.5em}
+\begin{figure}
+	\begin{minipage}{0.74\linewidth}
+%		\includegraphics[width=\linewidth]{growth.pdf}
+	\end{minipage} \hfill
+	\begin{minipage}{0.24\linewidth}
+%		\includegraphics[width=\linewidth]{album_release_year.pdf}
+	\end{minipage}
+%	\caption{(left) Growth of the archive. (right) Number of albums released per year (1902 to 2017).}
+\end{figure}
+\vspace{-1em}
+
+\end{block}
+
+%-------------------------------------------------------------------------------
+
+\end{column} % End of the first column
+
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+\begin{column}{\twocolwid}
+
+\begin{block}{Experiments \& Results}
+
+\end{block}
+
+\begin{block}{Implementation} % Limitations, Shortcomings
+
+\end{block}
+
+\begin{block}{Conclusions} % Community interest, Encouraging interest / reception
+
+\end{block}
+
+\begin{block}{Details}
+	
+\end{block}
+
+\begin{block}{Acknowledgements}
+	
+\end{block}
+
+%-------------------------------------------------------------------------------
+
+\end{column}
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+\end{columns} % End of all the columns in the poster
+\end{frame} % End of the enclosing frame
+\end{document}
